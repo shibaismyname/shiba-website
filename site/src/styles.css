@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+:root {
+    /* ---- variables ---- */
+    --background-color: #555555;
+    --foreground-color: #F5F5F5;
+
+    /* ---- font ---- */
+    font-family: "Open sans", Helvetica, Arial, sans-serif;
+
+    /* --- colors ---- */
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* ---- variables ---- */
+        --background-color: #F5F5F5;
+        --foreground-color: #555555;
+    }
+}
