@@ -4,6 +4,8 @@
     /* ---- variables ---- */
     --background-color: #555555;
     --foreground-color: #F5F5F5;
+    --accent-color: #696969;
+    --secondary-accent-color: #A9A9A9;
 
     /* ---- font ---- */
     font-family: "Open sans", Helvetica, Arial, sans-serif;
@@ -11,6 +13,32 @@
     /* --- colors ---- */
     background-color: var(--background-color);
     color: var(--foreground-color);
+
+    /* ---- positioning ---- */
+    padding: 10pt;
+}
+
+a:not(a button) { color: var(--secondary-accent-color) }
+a:hover { color: var(--accent-color) }
+
+main { padding: 5pt }
+
+code {
+    /* color */
+    background-color: var(--secondary-accent-color);
+
+    /* border */
+    border-radius: 5pt;
+
+    /* positioning */
+    display: block;
+    padding: 5pt;
+}
+
+#SIS-button {
+    font-family: monospace;
+
+    border-radius: 5pt;
 }
 
 @media (prefers-color-scheme: light) {
@@ -18,5 +46,12 @@
         /* ---- variables ---- */
         --background-color: #F5F5F5;
         --foreground-color: #555555;
+        --accent-color: #A9A9A9;
+        --secondary-accent-color: #696969;
     }
+
+    a { color: darkgray }
+    a:hover { color: lightgray }
+
+    code { background-color: var(--accent-color) }
 }
