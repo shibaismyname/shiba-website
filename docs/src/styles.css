@@ -51,6 +51,8 @@ code {
     border-radius: 5pt;
 }
 
+.appear { display: none }
+
 @media (prefers-color-scheme: light) {
     :root {
         /* ---- variables ---- */
