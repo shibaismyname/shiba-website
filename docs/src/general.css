@@ -1,0 +1,78 @@
+/* 
+░░░░░░░▐█▀█▄░░░░░░░░░░▄█▀█▌
+░░░░░░░█▐▓░█▄░░░░░░░▄█▀▄▓▐█
+░░░░░░░█▐▓▓░████▄▄▄█▀▄▓▓▓▌█
+░░░░░▄█▌▀▄▓▓▄▄▄▄▀▀▀▄▓▓▓▓▓▌█
+░░░▄█▀▀▄▓█▓▓▓▓▓▓▓▓▓▓▓▓▀░▓▌█
+░░█▀▄▓▓▓███▓▓▓███▓▓▓▄░░▄▓▐█▌
+░█▌▓▓▓▀▀▓▓▓▓███▓▓▓▓▓▓▓▄▀▓▓▐█
+▐█▐██▐░▄▓▓▓▓▓▀▄░▀▓▓▓▓▓▓▓▓▓▌█▌
+█▌███▓▓▓▓▓▓▓▓▐░░▄▓▓███▓▓▓▄▀▐█
+█▐█▓▀░░▀▓▓▓▓▓▓▓▓▓██████▓▓▓▓▐█▌
+▓▄▌▀░▀░▐▀█▄▓▓██████████▓▓▓▌█ 
+*/
+
+/* ---- positioning ---- */
+.left { text-align: left }
+.center { text-align: center }
+.right { text-align: right }
+
+.start { text-align: start }
+.justify { text-align: justify }
+.end { text-align: end }
+
+/* vertical */
+.top { vertical-align: top }
+.middle { vertical-align: middle }
+.bottom { vertical-align: bottom }
+
+/* -- content/items -- */
+.content-center { align-content: center }
+.content-space-between { align-content: space-between }
+.content-space-around { align-content: space-around }
+.content-space-evenly { align-content: space-evenly }
+.content-stretch { align-content: stretch }
+
+/* vertical */
+.content-vertical-strech { align-items: stretch }
+.content-vertical-baseline { align-items: baseline }
+.content-vertical-center { align-items: center }
+
+
+/* ---- display ---- */
+.inline { display: inline }
+.inline-block { display: inline-block }
+.block { display: block }
+
+/* --- flexbox --- */
+.flex { display: flex }
+
+.wrap { flex-wrap: wrap }
+
+/* -- horizontal -- */
+.flex-start { justify-content: flex-start }
+.flex-center { justify-content: center }
+.flex-end { justify-content: flex-end }
+.flex-space-between { justify-content: space-between }
+.flex-space-around { justify-content: space-around }
+.flex-space-evenly { justify-content: space-evenly }
+
+/* -- vertical -- */
+.flex-vertical-start { align-items: flex-start }
+.flex-vertical-end { align-items: flex-end }
+
+/* -- content -- */
+.flex-content-start { align-content: flex-start }
+.flex-content-end { align-content: flex-end }
+
+
+/* ---- size ---- */
+.XXS { font-size: xx-small }
+.XS { font-size: x-small }
+.S { font-size: small }
+.L { font-size: large }
+.XL { font-size: x-large }
+.XXL { font-size: xx-large }
+
+.maxwidth { width: 100% }
+.maxheight { height: 100% }

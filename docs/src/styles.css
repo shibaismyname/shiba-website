@@ -21,7 +21,16 @@
 a:not(a button) { color: var(--secondary-accent-color) }
 a:hover { color: var(--accent-color) }
 
-main { padding: 5pt }
+main {
+    padding: 5pt;
+    margin: 5pt;
+}
+
+section {
+    padding: 5pt;
+    margin: 5pt;
+    max-width: 400pt;
+}
 
 code {
     /* color */
@@ -33,6 +42,7 @@ code {
     /* positioning */
     display: block;
     padding: 5pt;
+    margin: 5pt;
 }
 
 #SIS-button {
