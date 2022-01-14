@@ -6,8 +6,56 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link ref="stylesheet" href="src/general.css">
         <title>Shiba Interective Shell</title>
+        <script>
+            document.addEventListener('keydown', (e) => {
+                const body = document.getElementById("body");
+                switch (e.key) {
+                    case "Enter":
+                        body.innerText += "\n";
+                        break;
+                    case "Backspace":
+                        if (body.innerText.slice(-1) != "\n") {
+                            body.innerHTML = body.innerHTML.slice(0, -1);
+                        }
+                        break;
+                    case " ":
+                        body.innerHTML += "&nbsp";
+                        break;
+                    case "Tab":
+                        body.innerHTML += "&nbsp&nbsp&nbsp&nbsp";
+                        break;
+                    case "CapsLock" || "Shift" || "Control" || "Alt" || "Meta" || "ArrowUp" || "ArrowDown" || "ArrowLeft" || "ArrowRight":
+                        break;
+                    default:
+                        body.innerText += e.key;
+                        break;
+                }
+                if (body.innerText.slice(-6) == "clear\n") {
+                    body.innerText = "";
+                } else if (body.innerText.slice(-5) == "exit\n") {
+                    window.location.href = "index.html";
+                } else if (body.innerText.slice(-5) == "help\n") {
+                    body.innerText += "available commands:\n* clear\n* exit\n* help\n* jobs\n* whoami \n";
+                } else if (body.innerText.slice(-5) == "jobs\n") {
+                    body.innerHTML += "[1] running&nbsp;&nbsp;&nbsp;&nbsp;school";
+                    body.innerText += "\n";
+                } else if (body.innerText.slice(-7) == "whoami\n") {
+                    body.innerText += "shiba\n";
+                } else if (body.innerText.slice(-1) == "\n" && e.key != "Backspace") {
+                    body.innerText += "That's an unknown command type 'help' for a list of commands.\n";
+                }
+            });
+        </script>
+        <style>
+            :root {
+                font-family: monospace, sans-serif;
+
+                background-color: black;
+                color: white;
+            }
+        </style>
     </head>
-    <body>
-        
+    <body id="body">
+
     </body>
 </html>
