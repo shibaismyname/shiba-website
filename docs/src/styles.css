@@ -21,6 +21,8 @@
 a:not(a button) { color: var(--secondary-accent-color) }
 a:hover { color: var(--accent-color) }
 
+nav a { margin: 10pt }
+
 main {
     padding: 5pt;
     margin: 5pt;
