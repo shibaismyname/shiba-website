@@ -21,6 +21,8 @@
 a:not(a button) { color: var(--secondary-accent-color) }
 a:hover { color: var(--accent-color) }
 
+a, button { transition: 0.3s }
+
 nav a { margin: 10pt }
 
 main {
